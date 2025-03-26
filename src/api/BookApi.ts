@@ -15,6 +15,7 @@ export const createBook = async (title?: string, author?: string, publicationYea
     if (image) {
       formData.append('file', image);
     }
+    console.log(image,'image')
 
     const response = await axios.post(`${BACKEND_URL}/book`, formData, {
       headers: {
