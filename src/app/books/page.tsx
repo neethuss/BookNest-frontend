@@ -115,7 +115,7 @@ export default function Page() {
           </ButtonComponent>
         </div>
       </div>
-      {cards.length && cards.length > 0 ? (
+      {cards && cards.length > 0 ? (
         <div className="flex flex-col items-center justify-center min-h-screen">
           <h1 className="text-3xl font-bold mb-8 text-center text-neutral-800 dark:text-neutral-100">
             Your Books
